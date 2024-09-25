@@ -1,0 +1,140 @@
+﻿<Window x:Class="Lab06_RM.Crear"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab06_RM"
+        mc:Ignorable="d"
+        Title="Crear" Height="450" Width="800">
+    <Grid Margin="10">
+        <!-- Definimos las filas y columnas del diseño principal -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Fila para el formulario -->
+            <RowDefinition Height="Auto"/>
+            <!-- Fila para los botones -->
+            <RowDefinition Height="*"/>
+            <!-- Fila para el DataGrid -->
+        </Grid.RowDefinitions>
+
+        <!-- Definimos el formulario de entrada -->
+        <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto" Height="300">
+            <StackPanel Orientation="Vertical" Margin="0,0,0,10">
+                <!-- IdEmpleado -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="IdEmpleado:" Width="100" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txtIdEmpleado" Width="200" VerticalAlignment="Center" />
+                </StackPanel>
+
+                <!-- Apellidos -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="Apellidos:" Width="100" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txtApellidos" Width="200" VerticalAlignment="Center" />
+                </StackPanel>
+
+                <!-- Nombre -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="Nombre:" Width="100" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txtNombre" Width="200" VerticalAlignment="Center" />
+                </StackPanel>
+
+                <!-- Cargo -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="Cargo:" Width="100" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txtCargo" Width="200" VerticalAlignment="Center" />
+                </StackPanel>
+
+                <!-- Tratamiento -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="Tratamiento:" Width="100" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txtTratamiento" Width="200" VerticalAlignment="Center" />
+                </StackPanel>
+
+                <!-- Fecha de Nacimiento -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="Fecha Nacimiento:" Width="100" VerticalAlignment="Center"/>
+                    <DatePicker x:Name="dpFechaNacimiento" Width="200" VerticalAlignment="Center" />
+                </StackPanel>
+
+                <!-- Fecha de Contratación -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="Fecha Contratación:" Width="100" VerticalAlignment="Center"/>
+                    <DatePicker x:Name="dpFechaContratacion" Width="200" VerticalAlignment="Center" />
+                </StackPanel>
+
+                <!-- Dirección -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="Dirección:" Width="100" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txtDireccion" Width="200" VerticalAlignment="Center" />
+                </StackPanel>
+
+                <!-- Ciudad -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="Ciudad:" Width="100" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txtCiudad" Width="200" VerticalAlignment="Center" />
+                </StackPanel>
+
+                <!-- Región -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="Región:" Width="100" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txtRegion" Width="200" VerticalAlignment="Center" />
+                </StackPanel>
+
+                <!-- Código Postal -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="CodPostal:" Width="100" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txtCodPostal" Width="200" VerticalAlignment="Center" />
+                </StackPanel>
+
+                <!-- País -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="País:" Width="100" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txtPais" Width="200" VerticalAlignment="Center" />
+                </StackPanel>
+
+                <!-- Teléfono Domicilio -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="Tel Domicilio:" Width="100" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txtTelDomicilio" Width="200" VerticalAlignment="Center" />
+                </StackPanel>
+
+                <!-- Extensión -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="Extensión:" Width="100" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txtExtension" Width="200" VerticalAlignment="Center" />
+                </StackPanel>
+
+                <!-- Notas -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="Notas:" Width="100" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txtNotas" Width="200" VerticalAlignment="Center" />
+                </StackPanel>
+
+                <!-- Jefe -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="Jefe:" Width="100" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txtJefe" Width="200" VerticalAlignment="Center" />
+                </StackPanel>
+
+                <!-- Sueldo Básico -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="Sueldo Básico:" Width="100" VerticalAlignment="Center"/>
+                    <TextBox x:Name="txtSueldoBasico" Width="200" VerticalAlignment="Center" />
+                </StackPanel>
+
+                <!-- Activo -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <Label Content="Activo:" Width="100" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="chkActivo" VerticalAlignment="Center" />
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Sección de botones -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
+            <!-- Botón Registrar Empleado -->
+            <Button x:Name="btnRegistrar" Content="Registrar Empleado" Width="150" Height="50" Margin="10"
+                    Background="LightGreen" FontSize="16" Click="btnRegistrar_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

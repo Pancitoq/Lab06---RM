@@ -1,0 +1,32 @@
+﻿<Window x:Class="Lab06_RM.Listar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab06_RM"
+        mc:Ignorable="d"
+        Title="Listar" Height="450" Width="800">
+    <Grid Margin="10">
+        <!-- Definimos las filas y columnas del diseño principal -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Fila para el formulario -->
+            <RowDefinition Height="Auto"/>
+            <!-- Fila para los botones -->
+            <RowDefinition Height="*"/>
+            <!-- Fila para el DataGrid -->
+        </Grid.RowDefinitions>
+
+        <!-- Sección de botones -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
+
+            <!-- Botón Listar Empleados -->
+            <Button x:Name="btnListar" Content="Listar Empleados" Width="150" Height="50" Margin="10"
+                    Background="LightBlue" FontSize="16" Click="btnListar_Click"/>
+        </StackPanel>
+
+        <!-- DataGrid para mostrar los empleados -->
+        <DataGrid x:Name="dgvEmpleados" Grid.Row="2" AutoGenerateColumns="True" 
+                  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,10,0,0"/>
+    </Grid>
+</Window>
